@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html lang="en" ng-app="website">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <meta name="keywords" content="consultancy, agency, strategy, apps, design, development, mobile, web, business apps, iOS, iPhone, Android">
+    <title> Maksood Mohiuddin | Technology and Travel </title>
+    @Styles.Render("~/Content/css")
+</head>
+<body>
+    @Html.Partial("~/Views/Shared/_Navigation.cshtml")
+
+    <div class="container body-content">
+        <div ui-view="main" ng-cloak></div>
+        @RenderBody()       
+    </div>
+    
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/angular")
+    @Scripts.Render("~/bundles/bootstrap")
+
+
+    @Scripts.Render("~/bundles/scripts/app")
+</body>
+</html>
